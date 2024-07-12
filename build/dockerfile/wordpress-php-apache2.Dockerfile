@@ -2,7 +2,7 @@ ARG DOCKER_REGISTRY
 ARG REGISTRY_USER=csalab
 ARG RTAG
 ARG PHP_VERSION
-FROM ${DOCKER_REGISTRY}${REGISTRY_USER}/sipstack:base${RTAG} as builder
+FROM ${DOCKER_REGISTRY}${REGISTRY_USER}/sipstack:latest${RTAG} as builder
 ARG IMAGE_VERSION
 WORKDIR /tmp
 COPY script/wordpress-apache.cpp /tmp
