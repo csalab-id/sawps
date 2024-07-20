@@ -1,9 +1,11 @@
 contents:
+  keyring:
+    - https://packages.wolfi.dev/os/wolfi-signing.rsa.pub
   repositories:
-    - https://dl-cdn.alpinelinux.org/alpine/edge/main
-    - https://dl-cdn.alpinelinux.org/alpine/edge/community
+    - https://dl-cdn.alpinelinux.org/alpine/v3.5/main
+    - https://dl-cdn.alpinelinux.org/alpine/v3.5/community
   packages:
-    - alpine-base
+    - apk-tools
 
 work-dir: /root
 
@@ -18,4 +20,4 @@ os-release:
 
 archs:
   - x86_64
-  - arm64
+  - aarch64
